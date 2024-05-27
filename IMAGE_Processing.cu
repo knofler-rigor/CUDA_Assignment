@@ -27,7 +27,7 @@ int main() {
         return -1;
     }
 
-    // Convert the image to RGB format if it's not already
+    // Convert the picture to RGB format if it's not already
     if (img.channels() == 1) {
         cv::cvtColor(img, img, cv::COLOR_GRAY2RGB);
     }
