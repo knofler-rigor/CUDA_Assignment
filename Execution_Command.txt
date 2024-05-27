@@ -1,0 +1,1 @@
+nvcc -o image_processing image_processing.cu `pkg-config --cflags --libs opencv4`
