@@ -22,3 +22,9 @@ Copy Data Back to Host: Transfer the processed image data back from the device t
 Free Device Memory: Release the allocated GPU memory.
 Save Processed Image: Use cv::imwrite to save the grayscale image.
 Display Images: Use cv::imshow to display the original and grayscale images. cv::waitKey waits for a key press before closing the windows.
+
+**GOING INTO THE EXECUTION AND INTO THE CODE:**
+This provides the image that was suppose to be the input for the file processing
+![image](https://github.com/knofler-rigor/CUDA_Assignment/assets/76225148/93d98106-88f0-43ea-b2c6-31cfb7ad4f65)
+This provides the required output for the file processing:
+![image](https://github.com/knofler-rigor/CUDA_Assignment/assets/76225148/e568f5dc-8f9d-49da-94e4-ec1c6f8afa5e)
