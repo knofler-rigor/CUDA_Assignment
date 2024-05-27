@@ -23,7 +23,12 @@ Free Device Memory: Release the allocated GPU memory.
 Save Processed Image: Use cv::imwrite to save the grayscale image.
 Display Images: Use cv::imshow to display the original and grayscale images. cv::waitKey waits for a key press before closing the windows.
 
-**GOING INTO THE EXECUTION AND INTO THE CODE:**
+**HOW THE CODE WORKS**
+
+The CUDA C++ code orchestrates the conversion of an input image from RGB to grayscale utilizing the parallel processing capabilities of the GPU. Upon loading the image via OpenCV, the code verifies its format, ensuring consistency by converting grayscale images to RGB. Subsequently, memory allocation occurs on the GPU for both input and output images, followed by data transfer from the CPU to the GPU. A CUDA kernel function, rgbToGrayscale, is then invoked to process each pixel of the image concurrently, employing a luminance formula to compute grayscale values from RGB components. Post-processing, the resulting grayscale image is transferred back to the CPU, and GPU memory is deallocated. Finally, utilizing OpenCV, the grayscale image is saved to disk, and both the original and grayscale images are displayed for visualization. Through these orchestrated steps, the code harnesses GPU parallelism to expedite the conversion process, offering a performance boost over traditional CPU-based implementations.
+
+**GOING INTO THE EXECUTION OF THE CODE:**
+
 This provides the image that was suppose to be the input for the file processing
 ![image](https://github.com/knofler-rigor/CUDA_Assignment/assets/76225148/93d98106-88f0-43ea-b2c6-31cfb7ad4f65)
 This provides the required output for the file processing:
