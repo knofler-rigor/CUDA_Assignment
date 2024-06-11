@@ -1,5 +1,7 @@
 # Thurst Library Algorithms
 
+Thrust is a parallel algorithms library designed to work on NVIDIA GPUs. It provides a high-level interface similar to the C++ Standard Template Library (STL) but leverages the computational power of GPUs to achieve significant performance improvements.
+
 ## Project Description
 
 Implemented various thrust library algorithms, such as sorting, reordering, reduction, transformation, and prefix-sum
