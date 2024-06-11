@@ -1,5 +1,0 @@
-Functions of the 3 headers being used are:
-
-<iostream> for standard I/O.
-<opencv2/opencv.hpp> for OpenCV functions.
-<cuda_runtime.h> for CUDA functions.
